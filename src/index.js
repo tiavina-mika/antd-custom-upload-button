@@ -4,14 +4,14 @@ import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
 
 import theme from "./styles/theme";
-import { globalStyles } from "./styles/styles";
-import Demo from "./Demo";
+import { GlobalStyles } from "./styles/styles";
+import Root from "./Root";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      {globalStyles}
-      <Demo />
+      <GlobalStyles theme={theme} />
+      <Root />
     </ThemeProvider>
   );
 };
